@@ -140,7 +140,7 @@ h1 {
     height: 66px;
     width: 66px;
     margin-bottom: 1px;
-    background-image: url(imagens/stories_background.jpg);
+    background-image: url(/assets/img/story-circle.svg);
     background-size: cover;
     position: relative;
 }
