@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #262626;
+    display: flex;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.barra-topo {
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    border: 1px solid #DBDBDB;
+    z-index: 1;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-topo-mobile {
+    display: none;
+}
+
+.barra-inferior-mobile {
+    display: none;
+}
+
+.conteudo-topo {
+    width: 935px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos {
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.separadora-logos {
+    background-color: #DBDBDB;
+    width: 1px;
+    height: 22px;
+    margin: 11px;
+}
+
+.caixa-pesquisa {
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 215px;
+    height: 28px;
+    color: #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.caixa-icones {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    width: 614px;
+    margin: 88px 29px 0 auto;
+    position: relative;
+}
+
+.caixa-stories {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 118px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    margin: 0 29px 24px 0;
+    padding: 18px 0 14px 18px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.caixa-stories ion-icon {
+    font-size: 32px;
+    position: absolute;
+    top: 43px;
+    right: 5px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stories {
+    width: 78px;
+    height: 86px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stories-pagina {
+    display: flex;
+    justify-content: center;
+    width: 68px;
+}
+
+h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stories-background {
+    height: 66px;
+    width: 66px;
+    margin-bottom: 1px;
+    background-image: url(imagens/stories_background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.stories-logo {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.sidebar-box {
+    height: auto;
+    width: 293px;
+    margin-top: 88px;
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    width: 293px;
+}
+
+.sugestao-foco {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sugestao-foco img {
+    margin: 24px 17px 24px 0;
+}
+
+.sugestao-foco p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #8E8E8E;
+}
+
+.sugestoes {
+    margin: 0 0 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sugestoes-p-voce-left {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+
+.sugestoes-p-voce-right {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sugestoes img {
+    margin-right: 11px;
+}
+
+.sugestoes-left {
+    display: flex;
+    align-items: center;
+}
+
+.sugestoes-left p {
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sugestoes-right {
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.info {
+    font-size: 11px;
+    font-weight: 400;
+    color: #C7C7C7;
+    margin-top: 33px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa-post {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: auto;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 60px;
+}
+
+.post-image {
+    width: 612px;
+    height: 612px;
+}
+
+.caixa-post video {
+    width: 100%;
+}
+
+.post-top {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 17px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.post-top-left {
+    display: flex;
+    align-items: center;
+}
+
+.post-top-left img {
+    margin-right: 15px;
+    height: 32px;
+    width: 32px;
+}
+
+.post-top-right {
+    font-size: 16px;
+}
+
+.post-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: 10px 15px;
+}
+
+.post-likes {
+    margin: 0 15px 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.post-likes img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.post-comments {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.post-legenda {
+    margin-bottom: 15px;
+}
+
+.post-comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.post-publicar {
+    color: #b2dffc;
+}
+
+.post-publicar:hover {
+    color: #0095f6;
+    transition-delay: 300ms;
+}
+
+@media (max-width: 935px) {
+    .sidebar-box {
+        display: none;
+    }
+
+    .main {
+        margin-right: auto;
+    }
+
+    .conteudo-topo {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 614px) {
+    .sidebar-box {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .conteudo-topo {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .caixa-post {
+        width: 100%;
+        height: auto;
+    }
+
+    .post-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .caixa-stories {
+        background-color: #E5E5E5;
+        border: none;
+    }
+
+    .caixa-stories ion-icon {
+        display: none;
+    }
+
+    .barra-topo {
+        display: none;
+    }
+
+    .barra-topo-mobile {
+        width: 100%;
+        height: 54px;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+        border: 1px solid #DBDBDB;
+        z-index: 1;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .caixa-icones {
+        width: auto;
+    }
+
+    .barra-inferior-mobile {
+        width: 100%;
+        height: 54px;
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 0;
+        border: 1px solid #DBDBDB;
+        z-index: 1;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 30px;
+    }
+}
