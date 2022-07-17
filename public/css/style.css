@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+input {
+    outline: none;
+}
+
 body {
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
@@ -65,16 +69,14 @@ span {
     margin: 11px;
 }
 
-.caixa-pesquisa {
+.caixa-pesquisa input {
     background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     width: 215px;
     height: 28px;
     color: #979797;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     font-size: 12px;
 }
 
@@ -316,6 +318,10 @@ h1 {
 .post-publicar:hover {
     color: #0095f6;
     transition-delay: 300ms;
+}
+
+.post-input input {
+    border: none;
 }
 
 @media (max-width: 935px) {

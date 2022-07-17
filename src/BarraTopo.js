@@ -1,4 +1,6 @@
 export default function BarraTopo() {
+    const icones = ["paper-plane-outline", "compass-outline", "heart-outline", "person-outline"];
+    
     return (
         <div class="barra-topo">
             <div class="conteudo-topo">
@@ -8,13 +10,10 @@ export default function BarraTopo() {
                     <img src="./assets/img/logo.png" alt='' />
                 </div>
                 <div class="caixa-pesquisa">
-                    Pesquisar
+                    <input placeholder="Pesquisar"/>
                 </div>
                 <div class="caixa-icones">
-                    <ion-icon name="paper-plane-outline"></ion-icon>
-                    <ion-icon name="compass-outline"></ion-icon>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <ion-icon name="person-outline"></ion-icon>
+                    {icones.map(icones => <ion-icon name={icones}></ion-icon>)}
                 </div>
             </div>
         </div>
