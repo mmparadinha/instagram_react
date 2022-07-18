@@ -1,6 +1,6 @@
 export default function BarraInferiorMobile() {
     return (
-        <div class="barra-inferior-mobile">
+        <div className="barra-inferior-mobile">
             <ion-icon name="home"></ion-icon>
             <ion-icon name="search-outline"></ion-icon>
             <ion-icon name="add-circle-outline"></ion-icon>

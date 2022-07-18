@@ -5,11 +5,11 @@ const paginaSugestoes = ["bad.vibes.memes", "chibirdart", "razoesparaacreditar",
 
 export default function SibedarBox() {
     return (
-        <div class="sidebar-box">
-            <div class="sidebar">
-                {paginaFoco.map(SugestaoFoco)}
-                {paginaSugestoes.map(pagina => Sugestoes(pagina))}
-                <div class="info">
+        <div className="sidebar-box">
+            <div className="sidebar">
+                {paginaFoco.map(paginaFoco => <SugestaoFoco data={paginaFoco}/>)}
+                {paginaSugestoes.map(pagina => <Sugestoes data={pagina}/>)}
+                <div className="info">
                     <div>
                         Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                         Termos • Localizações • Contas mais relevantes • Hashtags •

@@ -9,7 +9,7 @@ const post = [
         postAlt: "Cat using cellphone",
         postSub: "viciei",
         postLikeFoco: 'respondeai',
-        postLikes: '101.523',
+        postLikes: 101523,
         postComments: [
             {
                 commentPage: 'barked',
@@ -24,7 +24,7 @@ const post = [
         postAlt: "Doggy sleeping",
         postSub: 'soniiiinho',
         postLikeFoco: 'adorable_animals',
-        postLikes: '99.159',
+        postLikes: 99159,
         postComments: [
             {
                 commentPage: 'adorable_animals',
@@ -39,7 +39,7 @@ const post = [
         postAlt: "./assets/video/video.ogv",
         postSub: 'não pertencimento',
         postLikeFoco: 'barked',
-        postLikes: '66.597',
+        postLikes: 66597,
         postComments: [
             {
                 commentPage: 'bolosdasandra',
@@ -51,13 +51,13 @@ const post = [
 
 export default function Main() {
     return (
-        <div class="main">
-            <div class="caixa-stories">
-                {paginasStories.map(pagina => Stories(pagina))}
+        <div className="main">
+            <div className="caixa-stories">
+                {paginasStories.map(pagina => <Stories data={pagina}/>)}
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
 
-            {post.map(data => Post(data))}
+            {post.map(props => Post(props))}
         </div>
     );
 }

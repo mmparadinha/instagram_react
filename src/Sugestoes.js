@@ -1,15 +1,15 @@
 export default function Sugestoes(props) {
 
     return (
-        <div class="sugestoes">
-            <div class="sugestoes-left">
-                <img src={`./assets/img/${props}.svg`}/>
+        <div className="sugestoes">
+            <div className="sugestoes-left">
+                <img src={`./assets/img/${props.data}.svg`} alt={props.data}/>
                 <div>
-                    <span>{props}</span>
+                    <span>{props.data}</span>
                     <p>Segue você</p>
                 </div>
             </div>
-            <div class="sugestoes-right">
+            <div className="sugestoes-right">
                 Seguir
             </div>
         </div>
