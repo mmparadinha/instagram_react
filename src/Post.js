@@ -55,7 +55,7 @@ export default function Post(props) {
 
                     <div className="post-comentario">
                         <div className="post-input">
-                            <input type="text" placeholder="Adicione um comentário..." size="50" />
+                            <input type="text" placeholder="Adicione um comentário..." />
                         </div>
                         <div className="post-publicar">
                             Publicar
@@ -100,7 +100,7 @@ export default function Post(props) {
 
                     <div className="post-comentario">
                         <div className="post-input">
-                            <input type="text" placeholder="Adicione um comentário..." size="50" />
+                            <input type="text" placeholder="Adicione um comentário..." />
                         </div>
                         <div className="post-publicar">
                             Publicar
